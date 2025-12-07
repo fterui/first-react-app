@@ -6,6 +6,13 @@ import './App.css'
 function App() {
   const [count, setCount] = useState(0)
 
+  const calc = () => {
+    const addition = 1;
+    let answer = count;
+    answer = answer + addition;
+    return answer;
+  };
+
   return (
     <>
       <div>
@@ -18,7 +25,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button onClick={() => setCount(calc())}>
           count is {count}
         </button>
         <p>
